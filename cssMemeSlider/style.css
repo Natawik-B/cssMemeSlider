@@ -35,6 +35,8 @@ body {
 .css-memSlider-title {
   height: 10vh;
   margin: 0.5rem auto;
+  display: flex;
+  align-items: center;
   color: rgb(112, 129, 239);
 }
 .css-memSlider__input {
@@ -61,13 +63,14 @@ body {
   object-fit: initial;
 }
 
-#slide1:checked ~ .css-memSlider__text-dots .dot1 span,
-#slide2:checked ~ .css-memSlider__text-dots .dot2 span,
-#slide3:checked ~ .css-memSlider__text-dots .dot3 span,
-#slide4:checked ~ .css-memSlider__text-dots .dot4 span,
-#slide5:checked ~ .css-memSlider__text-dots .dot5 span{
-  background: #25282a;
-  border: 1px solid rgb(112, 129, 239);
+#slide1:checked ~ .css-memSlider__text-dots .dot1,
+#slide2:checked ~ .css-memSlider__text-dots .dot2,
+#slide3:checked ~ .css-memSlider__text-dots .dot3,
+#slide4:checked ~ .css-memSlider__text-dots .dot4,
+#slide5:checked ~ .css-memSlider__text-dots .dot5 {
+  background: rgb(112, 129, 239);
+  border: 0.2rem solid antiquewhite;
+  cursor: default;
 }
 
 #slide1:checked ~ .css-memSlider__images .first-img {
@@ -109,10 +112,6 @@ body {
   margin: 0;
   transition: 1s ease;
 }
-.css-memSlider__dot span {
-  width: 100%;
-  transition: 1.7s ease;
-}
 .css-memSlider__dots {
   display: flex;
   width: 40%;
@@ -129,8 +128,6 @@ body {
   cursor: pointer;
 }
 .css-memSlider__dots .css-memSlider__dot span {
-  height: 100%;
-  width: 100%;
   border-radius: 50%;
   background: antiquewhite;
   box-sizing: border-box;
@@ -141,7 +138,7 @@ body {
 }
 .css-memSlider__dots .css-memSlider__dot:active {
   background: antiquewhite;
-  border: 1px solid rgb(112, 129, 239);
+  border: 0.15rem solid rgb(112, 129, 239);
 }
 
 #slide1:checked ~ .css-memSlider__text-dots .first-text {
@@ -155,4 +152,23 @@ body {
 }
 #slide4:checked ~ .css-memSlider__text-dots .first-text {
   margin-left: -300%;
+}
+
+/* M E D I A */
+@media screen and (max-width: 67.1875rem) {
+  .css-memSlider__textAll {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 55rem) {
+  .css-memSlider__text-dots {
+    margin-top: 2rem;
+    flex-flow: column-reverse nowrap;
+  }
+  .css-memSlider__textAll {
+    font-size: 1rem;
+  }
+  .css-memSlider__text {
+    margin-top: 1rem;
+  }
 }
