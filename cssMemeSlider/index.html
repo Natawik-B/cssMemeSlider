@@ -15,33 +15,40 @@
   <section class="css-memSlider">
     <h1 class="css-memSlider-title">CSS Meme Slider</h1>
     <div class="css-memSlider__slider">
-      <div id="slide-1" class="css-memSlider__slide">
-        <img class="content-img" src="./assets/1.jpg" alt="mem1">
-        <p class="content-text">Мысли про некоторые тесты</p>
-      </div>
-      <div id="slide-2" class="css-memSlider__slide">
+      <input type="radio" class="css-memSlider__input" name="slide" id="slide1" checked>
+      <input type="radio" class="css-memSlider__input" name="slide" id="slide2">
+      <input type="radio" class="css-memSlider__input" name="slide" id="slide3">
+      <input type="radio" class="css-memSlider__input" name="slide" id="slide4">
+      <div class="css-memSlider__images">
+        <img class="content-img first-img" src="./assets/1.jpg" alt="mem1">
         <img class="content-img" src="./assets/2.jpg" alt="mem2">
-        <p class="content-text">Ты что ТЗ не читал...?</p>
-      </div>
-      <div id="slide-3" class="css-memSlider__slide">
         <img class="content-img" src="./assets/3.jpg" alt="mem3">
-        <p class="content-text">Когда друзья спрашивают "Как продвигается учёба?"</p>
-      </div>
-      <div id="slide-4" class="css-memSlider__slide">
         <img class="content-img" src="./assets/4.jpg" alt="mem4">
-        <p class="content-text">Когда не успел закончить проект до дедлайна</p>
       </div>
-      <div id="slide-5" class="css-memSlider__slide">
-        <img class="content-img" src="./assets/5.jpg" alt="mem5">
-        <p class="content-text">Бесплатные курсы взамен на душу</p>
+      <div class="css-memSlider__text-dots">
+        <div class="css-memSlider__text">
+          <div class="css-memSlider__textAll">
+            <p class="content-text first-text">Мысли про некоторые тесты RSSchool</p>
+            <p class="content-text">Ты что ТЗ не читал ... ?</p>
+            <p class="content-text">Когда спрашивают "Как продвигается учёба?"</p>
+            <p class="content-text">Когда не успел закончить проект до дедлайна</p>
+          </div>
+        </div>
+        <div class="css-memSlider__dots">
+          <label class="css-memSlider__dot dot1" for="slide1">
+            <span class="css-memSlider__dot-span"></span>
+          </label>
+          <label class="css-memSlider__dot dot2" for="slide2">
+            <span class="css-memSlider__dot-span"></span>
+          </label>
+          <label class="css-memSlider__dot dot3" for="slide3">
+            <span class="css-memSlider__dot-span"></span>
+          </label>
+          <label class="css-memSlider__dot dot4" for="slide4">
+            <span class="css-memSlider__dot-span"></span>
+          </label>
+        </div>
       </div>
-    </div>
-    <div class="css-memSlider__dots">
-      <a href="#slide-1" class="css-memSlider__dot"></a>
-      <a href="#slide-2" class="css-memSlider__dot"></a>
-      <a href="#slide-3" class="css-memSlider__dot"></a>
-      <a href="#slide-4" class="css-memSlider__dot"></a>
-      <a href="#slide-5" class="css-memSlider__dot"></a>
     </div>
   </section>
 </body>
