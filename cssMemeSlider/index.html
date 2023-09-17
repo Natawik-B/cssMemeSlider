@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Meme Slider by Natawik</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inika&family=Inter&family=Mouse+Memoirs&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="icon" href="./assets/icon.ico">
+</head>
+<body>
+  <section class="css-memSlider">
+    <h1 class="css-memSlider-title">CSS Meme Slider</h1>
+    <div class="css-memSlider__slider">
+      <input type="radio" class="css-memSlider__input" name="slide" id="slide1" checked>
+      <input type="radio" class="css-memSlider__input" name="slide" id="slide2">
+      <input type="radio" class="css-memSlider__input" name="slide" id="slide3">
+      <input type="radio" class="css-memSlider__input" name="slide" id="slide4">
+      <div class="css-memSlider__images">
+        <img class="content-img first-img" src="./assets/1.jpg" alt="mem1">
+        <img class="content-img" src="./assets/2.jpg" alt="mem2">
+        <img class="content-img" src="./assets/3.jpg" alt="mem3">
+        <img class="content-img" src="./assets/4.jpg" alt="mem4">
+      </div>
+      <div class="css-memSlider__text-dots">
+        <div class="css-memSlider__text">
+          <div class="css-memSlider__textAll">
+            <p class="content-text first-text">Мысли про некоторые тесты RSSchool</p>
+            <p class="content-text">Ты что ТЗ не читал ... ?</p>
+            <p class="content-text">Когда спрашивают "Как продвигается учёба?"</p>
+            <p class="content-text">Когда не успел закончить проект до дедлайна</p>
+          </div>
+        </div>
+        <div class="css-memSlider__dots">
+          <label class="css-memSlider__dot" for="slide1">
+            <div class="css-memSlider__dot-div dot1"></div>
+          </label>
+          <label class="css-memSlider__dot" for="slide2">
+            <div class="css-memSlider__dot-div dot2"></div>
+          </label>
+          <label class="css-memSlider__dot" for="slide3">
+            <div class="css-memSlider__dot-div dot3"></div>
+          </label>
+          <label class="css-memSlider__dot" for="slide4">
+            <div class="css-memSlider__dot-div dot4"></div>
+          </label>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
