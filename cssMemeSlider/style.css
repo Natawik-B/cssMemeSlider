@@ -119,24 +119,25 @@ body {
   gap: 0.5rem;
 }
 .css-memSlider__dot {
-  width: 1.5rem;
-  height: 1.5rem;
-  background: antiquewhite;
-  border-radius: 50%;
-  border: 0.15rem solid rgb(56, 81, 242);
-  transition: all 0.5s ease-in-out;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding-top: 1rem;
   cursor: pointer;
 }
-.css-memSlider__dots .css-memSlider__dot span {
+.css-memSlider__dot-div {
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
   background: antiquewhite;
   box-sizing: border-box;
   margin: 0 auto;
+  border: 0.15rem solid rgb(56, 81, 242);
+  transition: all 0.5s ease-in-out;
 }
-.css-memSlider__dots .css-memSlider__dot:hover {
+.css-memSlider__dots .css-memSlider__dot:hover .css-memSlider__dot-div {
   background: rgb(112, 129, 239);
 }
-.css-memSlider__dots .css-memSlider__dot:active {
+.css-memSlider__dots .css-memSlider__dot:active .css-memSlider__dot-div {
   background: antiquewhite;
   border: 0.15rem solid rgb(112, 129, 239);
 }
@@ -162,13 +163,19 @@ body {
 }
 @media screen and (max-width: 55rem) {
   .css-memSlider__text-dots {
+    height: 10rem;
     margin-top: 2rem;
     flex-flow: column-reverse nowrap;
   }
   .css-memSlider__textAll {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .css-memSlider__text {
     margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 35.313rem) {
+  .css-memSlider__textAll {
+    font-size: 0.8rem;
   }
 }
